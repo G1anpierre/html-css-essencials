@@ -73,8 +73,13 @@ nav li a:hover {
   padding-block-end: 14.5rem;
 }
 
+.main .wrapper {
+  padding-inline-start: 15px;
+  padding-inline-end: 15px;
+}
+
 .wrapper {
-  inline-size: 903px;
+  /* inline-size: 903px; */
   margin: auto;
 }
 
@@ -111,17 +116,20 @@ pre {
   text-align: start;
   border: 8px solid var(--blue30);
   border-radius: 8px;
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   box-shadow: -10px 10px 0px var(--blue20);
   margin-block-end: 40px;
   max-inline-size: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 blockquote {
   border-inline-start: 4px solid var(--blue30);
   text-align: start;
   padding-inline-start: 16px;
-  inline-size: 600px;
+  inline-size: 222px;
   margin: auto;
   font-size: 24px;
   line-height: 32px;
@@ -133,6 +141,11 @@ blockquote span::before {
 
 section {
   counter-reset: subtitle;
+}
+
+.navbar {
+  padding-inline-start: 15px;
+  padding-inline-end: 15px;
 }
 
 .section-content-setup h3::before,
@@ -285,6 +298,7 @@ section {
   padding-inline-start: 16px;
   padding-inline-end: 16px;
   font-size: 16px;
+  border: 2px solid black;
 }
 
 .section-formular input::placeholder {
@@ -297,18 +311,21 @@ section {
 
 .section-formular input[type="text"] {
   margin-inline-end: 16px;
+  margin-block-end: 16px;
 }
 
 .section-formular input[type="submit"] {
   inline-size: 126px;
-  margin-inline-start: -120px;
+  margin-inline-start: -131px;
   background: var(--blue30);
   color: white;
+  border: none;
 }
 
 .section-formular input[type="email"] {
+  inline-size: 47%;
   padding-inline-end: 121px;
-  inline-size: 190px;
+  margin-block-end: 16px;
 }
 
 /* Formular end */
